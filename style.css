@@ -1,0 +1,48 @@
+:root {
+    --def-font: #efeff1;
+    --nav-gray: #18181b;
+    --nav-sign: #9147ff;
+    --nav-logo: #a970ff;
+    --nav-active: #bb91fa;
+    --nav-active-h: #772ce8;
+    --search-gray: #464649;
+    --search-b-gray: #3a3a3d;
+    --bg-black: #0e0e10;
+    --aside-gray: #1f1f23;
+}
+
+nav {
+    background: var(--nav-gray);
+}
+
+.fa-twitch {
+    color: var(--nav-logo);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--def-font);
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: var(--nav-active);
+}
+
+.form-control {
+    background: var(--search-gray);
+}
+
+.dropdown-menu-dark {
+    background: var(--nav-gray);
+}
+
+.btn-primary {
+    background-color: var(--nav-sign);
+}
+
+.btn-primary:hover {
+    background-color: var(--nav-active-h);
+}
+
+.btn-secondary {
+    background-color: var(--search-b-gray);
+}
