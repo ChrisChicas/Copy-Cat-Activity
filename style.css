@@ -9,6 +9,9 @@
     --search-b-gray: #3a3a3d;
     --bg-black: #0e0e10;
     --aside-gray: #1f1f23;
+    --aside-text: #adadb8;
+    --main-link: #b992ff;
+    --footer-bg: #772ce8;
 }
 
 nav {
@@ -25,6 +28,10 @@ nav {
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
     color: var(--nav-active);
+}
+
+nav form {
+    width: 25%;
 }
 
 .form-control {
@@ -45,4 +52,58 @@ nav {
 
 .btn-secondary {
     background-color: var(--search-b-gray);
+}
+
+#aside {
+    background-color: var(--aside-gray);
+    color: var(--def-font);
+    min-height: 100vh;
+}
+
+.channels a {
+    text-decoration: none;
+}
+
+.channels .card, .channels {
+    background-color: var(--aside-gray);
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 100vw;
+    margin: 0;
+}
+
+.card-title {
+    color: var(--def-font);
+}
+
+.card-text {
+    color: var(--aside-text);
+}
+
+.card-rec {
+    color: red;
+}
+
+#main, #main .card, #main h5 {
+    background-color: var(--bg-black);
+}
+
+#main a {
+    text-decoration: none;
+}
+
+.carousel-inner img {
+    margin: 20px auto;
+}
+
+#main-category {
+    color: var(--main-link);
+}
+
+footer {
+    background-color: var(--footer-bg);
 }
