@@ -26,7 +26,7 @@ nav {
     color: var(--def-font);
 }
 
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav{
     color: var(--nav-active);
 }
 

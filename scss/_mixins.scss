@@ -1,0 +1,17 @@
+@mixin chardmix ($color, $flow, $jc, $align) {
+    background-color: $color;
+    flex-flow: $flow;
+    justify-content: $jc;
+    align-items: $align;
+}
+
+@mixin container ($minw, $margin) {
+    min-width: $minw;
+    margin: $margin;
+}
+
+@mixin aside ($bgcolor, $color, $mheight) {
+    background-color: $bgcolor;
+    color: $color;
+    min-height: $mheight;
+}

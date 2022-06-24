@@ -1,0 +1,24 @@
+@use "colors";
+
+@function bgColor($footer: false, $main: false, $nav: false) {
+    @if $footer {
+        @return colors.$bg-footer;
+    }
+
+    @if $main {
+        @return colors.$bg-black;
+    }
+
+    @if $nav {
+        @return colors.$nav-gray;
+    }
+}
+
+@function shorthandRegulator($props...) {
+    @if (length($props) > 4) {
+        @error "Shorthand takes no more than four properties!";
+    } @else {
+        $props: append($props, $val:null, $separator: space);
+        @return $props
+    }
+}

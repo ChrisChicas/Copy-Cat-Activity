@@ -1,0 +1,115 @@
+@use "colors";
+@use "mixins";
+@use "functions";
+
+#aside {
+    @include mixins.aside(colors.$aside-gray, colors.$def-font, 100vh);
+}
+
+.btn-primary {
+    background-color: colors.$nav-sign;
+
+    &:hover {
+        background-color: colors.$nav-active-h
+    }
+}
+
+.btn-secondary {
+    background-color: colors.$search-b-gray;
+
+    &:hover {
+        background-color: colors.$search-gray
+    }
+}
+
+.card-title {
+    color: colors.$def-font
+}
+
+.card-text {
+    color: colors.$aside-text
+}
+
+.card-rec {
+    color: red
+}
+
+.carousel-inner {
+    img {
+        margin: functions.shorthandRegulator(20px, auto);
+    }
+}
+
+.channels {
+    @include mixins.chardmix(colors.$aside-gray, row wrap, center, center);
+
+    a {
+        text-decoration: none;
+    }
+
+    .card {
+        @include mixins.chardmix(colors.$aside-gray, row wrap, center, center);
+
+    }
+}
+
+.container {
+    @include mixins.container(100vw, 0);
+}
+
+.dropdown-menu-dark {
+    background: functions.bgColor($nav:true);
+}
+
+.fa-twitch {
+    color: colors.$nav-logo;
+}
+
+footer {
+    background-color: functions.bgColor($footer:true);
+}
+
+.form-control {
+    background: colors.$search-gray;
+}
+
+#main {
+    background-color: functions.bgColor($main:true);
+
+    a {
+        text-decoration: none;
+    }
+
+    .card {
+        background-color: functions.bgColor($main:true);
+    }
+
+    h5 {
+        background-color: functions.bgColor($main:true);
+    }
+}
+
+#main-category {
+    color: colors.$main-link;
+}
+
+nav {
+   background: functions.bgColor($nav:true);
+   
+   form {
+    width: functions.shorthandRegulator(25%);
+   }
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-link {
+            color: colors.$def-font;
+
+            &:active {
+                color: colors.$nav-active;
+            }
+        }
+    }
+    
+}
